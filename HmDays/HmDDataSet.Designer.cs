@@ -7077,7 +7077,7 @@ namespace HmDays.HmDDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, title, des, create_data, complete_data, status_id, idea_id, pic, [dele" +
-                "te] FROM projects WHERE [delete]=true";
+                "te] FROM projects WHERE [delete]=false";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
