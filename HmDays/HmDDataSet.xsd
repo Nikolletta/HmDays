@@ -881,6 +881,36 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HmDConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        projects.title, projects.create_data, projects.complete_data, projects.idea_id, ideas.title AS status_title, prj_status.status_name, ideas.id, projects.status_id, 
+                         projects.pic
+FROM            ((prj_status INNER JOIN
+                         projects ON prj_status.id = projects.status_id) INNER JOIN
+                         ideas ON projects.idea_id = ideas.id)
+WHERE        (projects.[delete] = false)
+ORDER BY projects.create_data DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="create_data" DataSetColumn="create_data" />
+              <Mapping SourceColumn="complete_data" DataSetColumn="complete_data" />
+              <Mapping SourceColumn="idea_id" DataSetColumn="idea_id" />
+              <Mapping SourceColumn="status_title" DataSetColumn="status_title" />
+              <Mapping SourceColumn="status_name" DataSetColumn="status_name" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="status_id" DataSetColumn="status_id" />
+              <Mapping SourceColumn="pic" DataSetColumn="pic" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -1307,6 +1337,57 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="create_data" msprop:Generator_ColumnVarNameInTable="columncreate_data" msprop:Generator_ColumnPropNameInRow="create_data" msprop:Generator_ColumnPropNameInTable="create_dataColumn" msprop:Generator_UserColumnName="create_data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="complete_data" msprop:Generator_ColumnVarNameInTable="columncomplete_data" msprop:Generator_ColumnPropNameInRow="complete_data" msprop:Generator_ColumnPropNameInTable="complete_dataColumn" msprop:Generator_UserColumnName="complete_data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="idea_id" msprop:Generator_ColumnVarNameInTable="columnidea_id" msprop:Generator_ColumnPropNameInRow="idea_id" msprop:Generator_ColumnPropNameInTable="idea_idColumn" msprop:Generator_UserColumnName="idea_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status_title" msprop:Generator_ColumnVarNameInTable="columnstatus_title" msprop:Generator_ColumnPropNameInRow="status_title" msprop:Generator_ColumnPropNameInTable="status_titleColumn" msprop:Generator_UserColumnName="status_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status_name" msprop:Generator_ColumnVarNameInTable="columnstatus_name" msprop:Generator_ColumnPropNameInRow="status_name" msprop:Generator_ColumnPropNameInTable="status_nameColumn" msprop:Generator_UserColumnName="status_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status_id" msprop:Generator_ColumnVarNameInTable="columnstatus_id" msprop:Generator_ColumnPropNameInRow="status_id" msprop:Generator_ColumnPropNameInTable="status_idColumn" msprop:Generator_UserColumnName="status_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pic" msprop:Generator_ColumnVarNameInTable="columnpic" msprop:Generator_ColumnPropNameInRow="pic" msprop:Generator_ColumnPropNameInTable="picColumn" msprop:Generator_UserColumnName="pic" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -1365,6 +1446,7 @@
       <msdata:Relationship name="prd_statusproducts" msdata:parent="prd_status" msdata:child="products" msdata:parentkey="id" msdata:childkey="status_id" msprop:Generator_UserChildTable="products" msprop:Generator_ChildPropName="GetproductsRows" msprop:Generator_UserRelationName="prd_statusproducts" msprop:Generator_RelationVarName="relationprd_statusproducts" msprop:Generator_UserParentTable="prd_status" msprop:Generator_ParentPropName="prd_statusRow" />
       <msdata:Relationship name="prj_statusprojects" msdata:parent="prj_status" msdata:child="projects" msdata:parentkey="id" msdata:childkey="status_id" msprop:Generator_UserChildTable="projects" msprop:Generator_ChildPropName="GetprojectsRows" msprop:Generator_UserRelationName="prj_statusprojects" msprop:Generator_RelationVarName="relationprj_statusprojects" msprop:Generator_UserParentTable="prj_status" msprop:Generator_ParentPropName="prj_statusRow" />
       <msdata:Relationship name="mtr_sectionmaterials" msdata:parent="mtr_section" msdata:child="materials" msdata:parentkey="id" msdata:childkey="section_id" msprop:Generator_UserChildTable="materials" msprop:Generator_ChildPropName="GetmaterialsRows" msprop:Generator_UserRelationName="mtr_sectionmaterials" msprop:Generator_RelationVarName="relationmtr_sectionmaterials" msprop:Generator_UserParentTable="mtr_section" msprop:Generator_ParentPropName="mtr_sectionRow" />
+      <msdata:Relationship name="idea_statusideas1" msdata:parent="idea_status" msdata:child="DataTable1" msdata:parentkey="id" msdata:childkey="status_id" msprop:Generator_UserChildTable="DataTable1" msprop:Generator_ChildPropName="GetDataTable1Rows" msprop:Generator_UserRelationName="idea_statusideas1" msprop:Generator_ParentPropName="idea_statusRow" msprop:Generator_RelationVarName="relationidea_statusideas1" msprop:Generator_UserParentTable="idea_status" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
