@@ -69,6 +69,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HmDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HmDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HmDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +105,8 @@
     </None>
     <None Include="HmDDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HmDDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>HmDDataSet1.Designer.cs</LastGenOutput>
     </None>
     <None Include="HmDDataSet.xss">
       <DependentUpon>HmDDataSet.xsd</DependentUpon>
