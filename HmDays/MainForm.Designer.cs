@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Мишки");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Зайцы");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Мишки");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Зайцы");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Мишки");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Зайцы");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Мишки");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Зайцы");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Мишки");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Зайцы");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14});
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Мишки");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Зайцы");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Проекты изделий", new System.Windows.Forms.TreeNode[] {
+            treeNode16,
+            treeNode17});
             this.MainPanel = new System.Windows.Forms.SplitContainer();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabTable = new System.Windows.Forms.TabPage();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.btnTW_Setting = new System.Windows.Forms.ToolStripButton();
             this.tabProjects = new System.Windows.Forms.TabPage();
             this.splitPrj_Tab = new System.Windows.Forms.SplitContainer();
             this.treePrj = new System.Windows.Forms.TreeView();
@@ -83,6 +84,7 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.tabSetting = new System.Windows.Forms.TabPage();
             this.splitEvents = new System.Windows.Forms.SplitContainer();
             this.pnlEvents = new System.Windows.Forms.GroupBox();
             this.tblEventsMain = new System.Windows.Forms.DataGridView();
@@ -90,60 +92,13 @@
             this.checkListMain = new System.Windows.Forms.CheckedListBox();
             this.pnlMonth = new System.Windows.Forms.GroupBox();
             this.clnrMain = new System.Windows.Forms.MonthCalendar();
-            this.titleDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createdataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.completedataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ideaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statustitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusidDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.picDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hmDDataSet = new HmDays.HmDDataSet();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.projectsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hmDDataSet1 = new HmDays.HmDDataSet();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.eventsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.projectsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.eventsTableAdapter = new HmDays.HmDDataSetTableAdapters.eventsTableAdapter();
-            this.projectsTableAdapter = new HmDays.HmDDataSetTableAdapters.projectsTableAdapter();
-            this.dataTable1TableAdapter = new HmDays.HmDDataSetTableAdapters.DataTable1TableAdapter();
-            this.tableAdapterManager = new HmDays.HmDDataSetTableAdapters.TableAdapterManager();
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.btnTW_Setting = new System.Windows.Forms.ToolStripButton();
-            this.tabSetting = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.MainPanel)).BeginInit();
             this.MainPanel.Panel1.SuspendLayout();
             this.MainPanel.Panel2.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabTable.SuspendLayout();
+            this.toolStrip3.SuspendLayout();
             this.tabProjects.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPrj_Tab)).BeginInit();
             this.splitPrj_Tab.Panel1.SuspendLayout();
@@ -185,13 +140,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblEventsMain)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.pnlMonth.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eventsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource1)).BeginInit();
-            this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -240,6 +188,26 @@
             this.tabTable.Text = "Рабочий стол";
             this.tabTable.UseVisualStyleBackColor = true;
             // 
+            // toolStrip3
+            // 
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnTW_Setting});
+            this.toolStrip3.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.Size = new System.Drawing.Size(664, 36);
+            this.toolStrip3.TabIndex = 0;
+            this.toolStrip3.Text = "toolStrip3";
+            // 
+            // btnTW_Setting
+            // 
+            this.btnTW_Setting.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.btnTW_Setting.Image = ((System.Drawing.Image)(resources.GetObject("btnTW_Setting.Image")));
+            this.btnTW_Setting.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTW_Setting.Name = "btnTW_Setting";
+            this.btnTW_Setting.Size = new System.Drawing.Size(69, 33);
+            this.btnTW_Setting.Text = "Настройки";
+            this.btnTW_Setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // tabProjects
             // 
             this.tabProjects.Controls.Add(this.splitPrj_Tab);
@@ -276,14 +244,14 @@
             this.treePrj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treePrj.Location = new System.Drawing.Point(0, 0);
             this.treePrj.Name = "treePrj";
-            treeNode1.Name = "Узел1";
-            treeNode1.Text = "Мишки";
-            treeNode2.Name = "Узел2";
-            treeNode2.Text = "Зайцы";
-            treeNode3.Name = "Узел0";
-            treeNode3.Text = "Проекты изделий";
+            treeNode10.Name = "Узел1";
+            treeNode10.Text = "Мишки";
+            treeNode11.Name = "Узел2";
+            treeNode11.Text = "Зайцы";
+            treeNode12.Name = "Узел0";
+            treeNode12.Text = "Проекты изделий";
             this.treePrj.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3});
+            treeNode12});
             this.treePrj.Size = new System.Drawing.Size(141, 440);
             this.treePrj.TabIndex = 1;
             // 
@@ -340,19 +308,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.titleDataGridViewTextBoxColumn1,
-            this.createdataDataGridViewTextBoxColumn,
-            this.completedataDataGridViewTextBoxColumn,
-            this.ideaidDataGridViewTextBoxColumn,
-            this.statustitleDataGridViewTextBoxColumn,
-            this.statusnameDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn1,
-            this.statusidDataGridViewTextBoxColumn1,
-            this.picDataGridViewCheckBoxColumn});
-            this.dataGridView1.DataSource = this.dataTable1BindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
@@ -425,14 +381,14 @@
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode4.Name = "Узел1";
-            treeNode4.Text = "Мишки";
-            treeNode5.Name = "Узел2";
-            treeNode5.Text = "Зайцы";
-            treeNode6.Name = "Узел0";
-            treeNode6.Text = "Проекты изделий";
+            treeNode13.Name = "Узел1";
+            treeNode13.Text = "Мишки";
+            treeNode14.Name = "Узел2";
+            treeNode14.Text = "Зайцы";
+            treeNode15.Name = "Узел0";
+            treeNode15.Text = "Проекты изделий";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
+            treeNode15});
             this.treeView1.Size = new System.Drawing.Size(141, 440);
             this.treeView1.TabIndex = 1;
             // 
@@ -489,19 +445,7 @@
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewCheckBoxColumn2});
-            this.dataGridView2.DataSource = this.projectsBindingSource;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
@@ -593,14 +537,14 @@
             this.treeView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView2.Location = new System.Drawing.Point(0, 0);
             this.treeView2.Name = "treeView2";
-            treeNode7.Name = "Узел1";
-            treeNode7.Text = "Мишки";
-            treeNode8.Name = "Узел2";
-            treeNode8.Text = "Зайцы";
-            treeNode9.Name = "Узел0";
-            treeNode9.Text = "Проекты изделий";
+            treeNode16.Name = "Узел1";
+            treeNode16.Text = "Мишки";
+            treeNode17.Name = "Узел2";
+            treeNode17.Text = "Зайцы";
+            treeNode18.Name = "Узел0";
+            treeNode18.Text = "Проекты изделий";
             this.treeView2.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode9});
+            treeNode18});
             this.treeView2.Size = new System.Drawing.Size(140, 434);
             this.treeView2.TabIndex = 1;
             // 
@@ -657,19 +601,7 @@
             // 
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewCheckBoxColumn3,
-            this.dataGridViewCheckBoxColumn4});
-            this.dataGridView3.DataSource = this.projectsBindingSource;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
             this.dataGridView3.Name = "dataGridView3";
@@ -706,6 +638,15 @@
             this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton6.Text = "toolStripButton2";
             // 
+            // tabSetting
+            // 
+            this.tabSetting.Location = new System.Drawing.Point(4, 29);
+            this.tabSetting.Name = "tabSetting";
+            this.tabSetting.Size = new System.Drawing.Size(670, 540);
+            this.tabSetting.TabIndex = 6;
+            this.tabSetting.Text = "Настройки";
+            this.tabSetting.UseVisualStyleBackColor = true;
+            // 
             // splitEvents
             // 
             this.splitEvents.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -737,18 +678,7 @@
             // 
             // tblEventsMain
             // 
-            this.tblEventsMain.AutoGenerateColumns = false;
             this.tblEventsMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblEventsMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.titleDataGridViewTextBoxColumn,
-            this.createdateDataGridViewTextBoxColumn,
-            this.projectidDataGridViewTextBoxColumn,
-            this.productidDataGridViewTextBoxColumn,
-            this.orderidDataGridViewTextBoxColumn,
-            this.statusidDataGridViewTextBoxColumn,
-            this.deleteDataGridViewCheckBoxColumn});
-            this.tblEventsMain.DataSource = this.eventsBindingSource;
             this.tblEventsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblEventsMain.Location = new System.Drawing.Point(3, 16);
             this.tblEventsMain.Name = "tblEventsMain";
@@ -795,331 +725,6 @@
             this.clnrMain.Name = "clnrMain";
             this.clnrMain.TabIndex = 0;
             // 
-            // titleDataGridViewTextBoxColumn1
-            // 
-            this.titleDataGridViewTextBoxColumn1.DataPropertyName = "title";
-            this.titleDataGridViewTextBoxColumn1.HeaderText = "title";
-            this.titleDataGridViewTextBoxColumn1.Name = "titleDataGridViewTextBoxColumn1";
-            this.titleDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // createdataDataGridViewTextBoxColumn
-            // 
-            this.createdataDataGridViewTextBoxColumn.DataPropertyName = "create_data";
-            this.createdataDataGridViewTextBoxColumn.HeaderText = "create_data";
-            this.createdataDataGridViewTextBoxColumn.Name = "createdataDataGridViewTextBoxColumn";
-            this.createdataDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // completedataDataGridViewTextBoxColumn
-            // 
-            this.completedataDataGridViewTextBoxColumn.DataPropertyName = "complete_data";
-            this.completedataDataGridViewTextBoxColumn.HeaderText = "complete_data";
-            this.completedataDataGridViewTextBoxColumn.Name = "completedataDataGridViewTextBoxColumn";
-            this.completedataDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ideaidDataGridViewTextBoxColumn
-            // 
-            this.ideaidDataGridViewTextBoxColumn.DataPropertyName = "idea_id";
-            this.ideaidDataGridViewTextBoxColumn.HeaderText = "idea_id";
-            this.ideaidDataGridViewTextBoxColumn.Name = "ideaidDataGridViewTextBoxColumn";
-            this.ideaidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statustitleDataGridViewTextBoxColumn
-            // 
-            this.statustitleDataGridViewTextBoxColumn.DataPropertyName = "status_title";
-            this.statustitleDataGridViewTextBoxColumn.HeaderText = "status_title";
-            this.statustitleDataGridViewTextBoxColumn.Name = "statustitleDataGridViewTextBoxColumn";
-            this.statustitleDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusnameDataGridViewTextBoxColumn
-            // 
-            this.statusnameDataGridViewTextBoxColumn.DataPropertyName = "status_name";
-            this.statusnameDataGridViewTextBoxColumn.HeaderText = "status_name";
-            this.statusnameDataGridViewTextBoxColumn.Name = "statusnameDataGridViewTextBoxColumn";
-            this.statusnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // statusidDataGridViewTextBoxColumn1
-            // 
-            this.statusidDataGridViewTextBoxColumn1.DataPropertyName = "status_id";
-            this.statusidDataGridViewTextBoxColumn1.HeaderText = "status_id";
-            this.statusidDataGridViewTextBoxColumn1.Name = "statusidDataGridViewTextBoxColumn1";
-            this.statusidDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // picDataGridViewCheckBoxColumn
-            // 
-            this.picDataGridViewCheckBoxColumn.DataPropertyName = "pic";
-            this.picDataGridViewCheckBoxColumn.HeaderText = "pic";
-            this.picDataGridViewCheckBoxColumn.Name = "picDataGridViewCheckBoxColumn";
-            this.picDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.hmDDataSet;
-            // 
-            // hmDDataSet
-            // 
-            this.hmDDataSet.DataSetName = "HmDDataSet";
-            this.hmDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn2.HeaderText = "title";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "des";
-            this.dataGridViewTextBoxColumn3.HeaderText = "des";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "create_data";
-            this.dataGridViewTextBoxColumn4.HeaderText = "create_data";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "complete_data";
-            this.dataGridViewTextBoxColumn5.HeaderText = "complete_data";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "status_id";
-            this.dataGridViewTextBoxColumn6.HeaderText = "status_id";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "idea_id";
-            this.dataGridViewTextBoxColumn7.HeaderText = "idea_id";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "pic";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "pic";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "delete";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "delete";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
-            // 
-            // projectsBindingSource
-            // 
-            this.projectsBindingSource.DataMember = "projects";
-            this.projectsBindingSource.DataSource = this.hmDDataSet1;
-            // 
-            // hmDDataSet1
-            // 
-            this.hmDDataSet1.DataSetName = "HmDDataSet";
-            this.hmDDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn8.HeaderText = "id";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn9.HeaderText = "title";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "des";
-            this.dataGridViewTextBoxColumn10.HeaderText = "des";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "create_data";
-            this.dataGridViewTextBoxColumn11.HeaderText = "create_data";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "complete_data";
-            this.dataGridViewTextBoxColumn12.HeaderText = "complete_data";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "status_id";
-            this.dataGridViewTextBoxColumn13.HeaderText = "status_id";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "idea_id";
-            this.dataGridViewTextBoxColumn14.HeaderText = "idea_id";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn3
-            // 
-            this.dataGridViewCheckBoxColumn3.DataPropertyName = "pic";
-            this.dataGridViewCheckBoxColumn3.HeaderText = "pic";
-            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
-            this.dataGridViewCheckBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn4
-            // 
-            this.dataGridViewCheckBoxColumn4.DataPropertyName = "delete";
-            this.dataGridViewCheckBoxColumn4.HeaderText = "delete";
-            this.dataGridViewCheckBoxColumn4.Name = "dataGridViewCheckBoxColumn4";
-            this.dataGridViewCheckBoxColumn4.ReadOnly = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "title";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            // 
-            // createdateDataGridViewTextBoxColumn
-            // 
-            this.createdateDataGridViewTextBoxColumn.DataPropertyName = "create_date";
-            this.createdateDataGridViewTextBoxColumn.HeaderText = "create_date";
-            this.createdateDataGridViewTextBoxColumn.Name = "createdateDataGridViewTextBoxColumn";
-            // 
-            // projectidDataGridViewTextBoxColumn
-            // 
-            this.projectidDataGridViewTextBoxColumn.DataPropertyName = "project_id";
-            this.projectidDataGridViewTextBoxColumn.HeaderText = "project_id";
-            this.projectidDataGridViewTextBoxColumn.Name = "projectidDataGridViewTextBoxColumn";
-            // 
-            // productidDataGridViewTextBoxColumn
-            // 
-            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
-            this.productidDataGridViewTextBoxColumn.HeaderText = "product_id";
-            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
-            // 
-            // orderidDataGridViewTextBoxColumn
-            // 
-            this.orderidDataGridViewTextBoxColumn.DataPropertyName = "order_id";
-            this.orderidDataGridViewTextBoxColumn.HeaderText = "order_id";
-            this.orderidDataGridViewTextBoxColumn.Name = "orderidDataGridViewTextBoxColumn";
-            // 
-            // statusidDataGridViewTextBoxColumn
-            // 
-            this.statusidDataGridViewTextBoxColumn.DataPropertyName = "status_id";
-            this.statusidDataGridViewTextBoxColumn.HeaderText = "status_id";
-            this.statusidDataGridViewTextBoxColumn.Name = "statusidDataGridViewTextBoxColumn";
-            // 
-            // deleteDataGridViewCheckBoxColumn
-            // 
-            this.deleteDataGridViewCheckBoxColumn.DataPropertyName = "delete";
-            this.deleteDataGridViewCheckBoxColumn.HeaderText = "delete";
-            this.deleteDataGridViewCheckBoxColumn.Name = "deleteDataGridViewCheckBoxColumn";
-            // 
-            // eventsBindingSource
-            // 
-            this.eventsBindingSource.DataMember = "events";
-            this.eventsBindingSource.DataSource = this.hmDDataSet;
-            // 
-            // projectsBindingSource1
-            // 
-            this.projectsBindingSource1.DataMember = "projects";
-            this.projectsBindingSource1.DataSource = this.hmDDataSet1;
-            // 
-            // eventsTableAdapter
-            // 
-            this.eventsTableAdapter.ClearBeforeFill = true;
-            // 
-            // projectsTableAdapter
-            // 
-            this.projectsTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataTable1TableAdapter
-            // 
-            this.dataTable1TableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.check_listTableAdapter = null;
-            this.tableAdapterManager.eventsTableAdapter = this.eventsTableAdapter;
-            this.tableAdapterManager.evt_statusTableAdapter = null;
-            this.tableAdapterManager.idea_statusTableAdapter = null;
-            this.tableAdapterManager.ideasTableAdapter = null;
-            this.tableAdapterManager.materialsTableAdapter = null;
-            this.tableAdapterManager.mtr_sectionTableAdapter = null;
-            this.tableAdapterManager.picturesTableAdapter = null;
-            this.tableAdapterManager.prd_statusTableAdapter = null;
-            this.tableAdapterManager.prj_statusTableAdapter = null;
-            this.tableAdapterManager.productsTableAdapter = null;
-            this.tableAdapterManager.projectsTableAdapter = this.projectsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = HmDays.HmDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // toolStrip3
-            // 
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnTW_Setting});
-            this.toolStrip3.Location = new System.Drawing.Point(3, 3);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(664, 36);
-            this.toolStrip3.TabIndex = 0;
-            this.toolStrip3.Text = "toolStrip3";
-            // 
-            // btnTW_Setting
-            // 
-            this.btnTW_Setting.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.btnTW_Setting.Image = ((System.Drawing.Image)(resources.GetObject("btnTW_Setting.Image")));
-            this.btnTW_Setting.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTW_Setting.Name = "btnTW_Setting";
-            this.btnTW_Setting.Size = new System.Drawing.Size(69, 33);
-            this.btnTW_Setting.Text = "Настройки";
-            this.btnTW_Setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tabSetting
-            // 
-            this.tabSetting.Location = new System.Drawing.Point(4, 29);
-            this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(670, 540);
-            this.tabSetting.TabIndex = 6;
-            this.tabSetting.Text = "Настройки";
-            this.tabSetting.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1136,6 +741,8 @@
             this.tabMain.ResumeLayout(false);
             this.tabTable.ResumeLayout(false);
             this.tabTable.PerformLayout();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
             this.tabProjects.ResumeLayout(false);
             this.splitPrj_Tab.Panel1.ResumeLayout(false);
             this.splitPrj_Tab.Panel2.ResumeLayout(false);
@@ -1186,14 +793,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblEventsMain)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.pnlMonth.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eventsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource1)).EndInit();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1214,30 +813,16 @@
         private System.Windows.Forms.GroupBox pnlMonth;
         private System.Windows.Forms.DataGridView tblEventsMain;
         private System.Windows.Forms.MonthCalendar clnrMain;
-        private HmDDataSet hmDDataSet;
-        private System.Windows.Forms.BindingSource eventsBindingSource;
-        private HmDDataSetTableAdapters.eventsTableAdapter eventsTableAdapter;
         private System.Windows.Forms.SplitContainer splitPrj_Tab;
         private System.Windows.Forms.TreeView treePrj;
         private System.Windows.Forms.Panel pnlPrj_btnTree;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn createdateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn projectidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn deleteDataGridViewCheckBoxColumn;
         private System.Windows.Forms.Button btnPrj_DelBranch;
         private System.Windows.Forms.Button btnPrj_AddBranch;
         private System.Windows.Forms.SplitContainer splitPrj_Body;
         private System.Windows.Forms.ToolStrip toolSPrj;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private HmDDataSetTableAdapters.projectsTableAdapter projectsTableAdapter;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private HmDDataSet hmDDataSet1;
-        private System.Windows.Forms.BindingSource projectsBindingSource;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Panel panel1;
@@ -1245,15 +830,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
@@ -1265,31 +841,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn4;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.BindingSource projectsBindingSource1;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource;
-        private HmDDataSetTableAdapters.DataTable1TableAdapter dataTable1TableAdapter;
-        private HmDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn createdataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn completedataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ideaidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statustitleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn picDataGridViewCheckBoxColumn;
         private System.Windows.Forms.ToolStrip toolStrip3;
         private System.Windows.Forms.ToolStripButton btnTW_Setting;
         private System.Windows.Forms.TabPage tabSetting;
