@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Мишки");
             System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Зайцы");
@@ -92,6 +93,19 @@
             this.checkListMain = new System.Windows.Forms.CheckedListBox();
             this.pnlMonth = new System.Windows.Forms.GroupBox();
             this.clnrMain = new System.Windows.Forms.MonthCalendar();
+            this.hmDDataSet = new HmDays.HmDDataSet();
+            this.tblProjectBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectTableAdapter = new HmDays.HmDDataSetTableAdapters.tblProjectTableAdapter();
+            this.tableAdapterManager = new HmDays.HmDDataSetTableAdapters.TableAdapterManager();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.createdataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.completedataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ideaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statustitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.MainPanel)).BeginInit();
             this.MainPanel.Panel1.SuspendLayout();
             this.MainPanel.Panel2.SuspendLayout();
@@ -140,6 +154,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblEventsMain)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.pnlMonth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -308,7 +324,19 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titleDataGridViewTextBoxColumn,
+            this.createdataDataGridViewTextBoxColumn,
+            this.completedataDataGridViewTextBoxColumn,
+            this.ideaidDataGridViewTextBoxColumn,
+            this.statustitleDataGridViewTextBoxColumn,
+            this.statusnameDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.statusidDataGridViewTextBoxColumn,
+            this.deleteDataGridViewCheckBoxColumn});
+            this.dataGridView1.DataSource = this.tblProjectBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
@@ -725,6 +753,102 @@
             this.clnrMain.Name = "clnrMain";
             this.clnrMain.TabIndex = 0;
             // 
+            // hmDDataSet
+            // 
+            this.hmDDataSet.DataSetName = "HmDDataSet";
+            this.hmDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProjectBindingSource
+            // 
+            this.tblProjectBindingSource.DataMember = "tblProject";
+            this.tblProjectBindingSource.DataSource = this.hmDDataSet;
+            // 
+            // tblProjectTableAdapter
+            // 
+            this.tblProjectTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.check_listTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.eventsTableAdapter = null;
+            this.tableAdapterManager.evt_statusTableAdapter = null;
+            this.tableAdapterManager.idea_statusTableAdapter = null;
+            this.tableAdapterManager.ideasTableAdapter = null;
+            this.tableAdapterManager.materialsTableAdapter = null;
+            this.tableAdapterManager.mtr_sectionTableAdapter = null;
+            this.tableAdapterManager.picturesTableAdapter = null;
+            this.tableAdapterManager.prd_statusTableAdapter = null;
+            this.tableAdapterManager.prj_sectionTableAdapter = null;
+            this.tableAdapterManager.prj_statusTableAdapter = null;
+            this.tableAdapterManager.productsTableAdapter = null;
+            this.tableAdapterManager.projectsTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = HmDays.HmDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // createdataDataGridViewTextBoxColumn
+            // 
+            this.createdataDataGridViewTextBoxColumn.DataPropertyName = "create_data";
+            this.createdataDataGridViewTextBoxColumn.HeaderText = "create_data";
+            this.createdataDataGridViewTextBoxColumn.Name = "createdataDataGridViewTextBoxColumn";
+            this.createdataDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // completedataDataGridViewTextBoxColumn
+            // 
+            this.completedataDataGridViewTextBoxColumn.DataPropertyName = "complete_data";
+            this.completedataDataGridViewTextBoxColumn.HeaderText = "complete_data";
+            this.completedataDataGridViewTextBoxColumn.Name = "completedataDataGridViewTextBoxColumn";
+            this.completedataDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ideaidDataGridViewTextBoxColumn
+            // 
+            this.ideaidDataGridViewTextBoxColumn.DataPropertyName = "idea_id";
+            this.ideaidDataGridViewTextBoxColumn.HeaderText = "idea_id";
+            this.ideaidDataGridViewTextBoxColumn.Name = "ideaidDataGridViewTextBoxColumn";
+            this.ideaidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statustitleDataGridViewTextBoxColumn
+            // 
+            this.statustitleDataGridViewTextBoxColumn.DataPropertyName = "status_title";
+            this.statustitleDataGridViewTextBoxColumn.HeaderText = "status_title";
+            this.statustitleDataGridViewTextBoxColumn.Name = "statustitleDataGridViewTextBoxColumn";
+            this.statustitleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusnameDataGridViewTextBoxColumn
+            // 
+            this.statusnameDataGridViewTextBoxColumn.DataPropertyName = "status_name";
+            this.statusnameDataGridViewTextBoxColumn.HeaderText = "status_name";
+            this.statusnameDataGridViewTextBoxColumn.Name = "statusnameDataGridViewTextBoxColumn";
+            this.statusnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusidDataGridViewTextBoxColumn
+            // 
+            this.statusidDataGridViewTextBoxColumn.DataPropertyName = "status_id";
+            this.statusidDataGridViewTextBoxColumn.HeaderText = "status_id";
+            this.statusidDataGridViewTextBoxColumn.Name = "statusidDataGridViewTextBoxColumn";
+            this.statusidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // deleteDataGridViewCheckBoxColumn
+            // 
+            this.deleteDataGridViewCheckBoxColumn.DataPropertyName = "delete";
+            this.deleteDataGridViewCheckBoxColumn.HeaderText = "delete";
+            this.deleteDataGridViewCheckBoxColumn.Name = "deleteDataGridViewCheckBoxColumn";
+            this.deleteDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -793,6 +917,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblEventsMain)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.pnlMonth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hmDDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -847,6 +973,19 @@
         private System.Windows.Forms.ToolStrip toolStrip3;
         private System.Windows.Forms.ToolStripButton btnTW_Setting;
         private System.Windows.Forms.TabPage tabSetting;
+        private HmDDataSet hmDDataSet;
+        private System.Windows.Forms.BindingSource tblProjectBindingSource;
+        private HmDDataSetTableAdapters.tblProjectTableAdapter tblProjectTableAdapter;
+        private HmDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createdataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn completedataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ideaidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statustitleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn deleteDataGridViewCheckBoxColumn;
     }
 }
 
