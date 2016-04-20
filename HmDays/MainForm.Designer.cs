@@ -195,6 +195,7 @@
             // 
             // tabTable
             // 
+            this.tabTable.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabTable.Controls.Add(this.toolStrip3);
             this.tabTable.Location = new System.Drawing.Point(4, 29);
             this.tabTable.Name = "tabTable";
@@ -202,7 +203,6 @@
             this.tabTable.Size = new System.Drawing.Size(670, 540);
             this.tabTable.TabIndex = 0;
             this.tabTable.Text = "Рабочий стол";
-            this.tabTable.UseVisualStyleBackColor = true;
             // 
             // toolStrip3
             // 
@@ -226,13 +226,13 @@
             // 
             // tabProjects
             // 
+            this.tabProjects.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabProjects.Controls.Add(this.splitPrj_Tab);
             this.tabProjects.Location = new System.Drawing.Point(4, 29);
             this.tabProjects.Name = "tabProjects";
             this.tabProjects.Size = new System.Drawing.Size(670, 540);
             this.tabProjects.TabIndex = 1;
             this.tabProjects.Text = "Проекты";
-            this.tabProjects.UseVisualStyleBackColor = true;
             // 
             // splitPrj_Tab
             // 
@@ -375,13 +375,13 @@
             // 
             // tabOrder
             // 
+            this.tabOrder.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabOrder.Controls.Add(this.splitContainer1);
             this.tabOrder.Location = new System.Drawing.Point(4, 29);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.Size = new System.Drawing.Size(670, 540);
             this.tabOrder.TabIndex = 2;
             this.tabOrder.Text = "Заказы";
-            this.tabOrder.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
@@ -405,6 +405,7 @@
             // 
             // treeView1
             // 
+            this.treeView1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
@@ -465,6 +466,10 @@
             // 
             this.splitContainer2.Panel1.Controls.Add(this.dataGridView2);
             this.splitContainer2.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
             this.splitContainer2.Size = new System.Drawing.Size(522, 515);
             this.splitContainer2.SplitterDistance = 239;
             this.splitContainer2.TabIndex = 1;
@@ -512,24 +517,25 @@
             // 
             // tabIdea
             // 
+            this.tabIdea.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabIdea.Location = new System.Drawing.Point(4, 29);
             this.tabIdea.Name = "tabIdea";
             this.tabIdea.Size = new System.Drawing.Size(670, 540);
             this.tabIdea.TabIndex = 3;
             this.tabIdea.Text = "Идеи";
-            this.tabIdea.UseVisualStyleBackColor = true;
             // 
             // tabBalance
             // 
+            this.tabBalance.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabBalance.Location = new System.Drawing.Point(4, 29);
             this.tabBalance.Name = "tabBalance";
             this.tabBalance.Size = new System.Drawing.Size(670, 540);
             this.tabBalance.TabIndex = 4;
             this.tabBalance.Text = "Баланс";
-            this.tabBalance.UseVisualStyleBackColor = true;
             // 
             // tabMaterials
             // 
+            this.tabMaterials.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabMaterials.Controls.Add(this.splitContainer3);
             this.tabMaterials.Location = new System.Drawing.Point(4, 29);
             this.tabMaterials.Name = "tabMaterials";
@@ -537,7 +543,6 @@
             this.tabMaterials.Size = new System.Drawing.Size(670, 540);
             this.tabMaterials.TabIndex = 5;
             this.tabMaterials.Text = "Материалы";
-            this.tabMaterials.UseVisualStyleBackColor = true;
             // 
             // splitContainer3
             // 
@@ -668,12 +673,12 @@
             // 
             // tabSetting
             // 
+            this.tabSetting.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabSetting.Location = new System.Drawing.Point(4, 29);
             this.tabSetting.Name = "tabSetting";
             this.tabSetting.Size = new System.Drawing.Size(670, 540);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "Настройки";
-            this.tabSetting.UseVisualStyleBackColor = true;
             // 
             // splitEvents
             // 
@@ -853,6 +858,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(864, 573);
             this.Controls.Add(this.MainPanel);
             this.Name = "MainForm";
